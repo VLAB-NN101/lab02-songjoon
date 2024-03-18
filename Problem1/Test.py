@@ -16,3 +16,6 @@ if __name__=="__main__":
 
         train_data = arr[:-3]
         test_data = arr[-3:]
+
+        ## process torch.Tensor and make comparsion
+        ## Answer should be < 1% relative error.
