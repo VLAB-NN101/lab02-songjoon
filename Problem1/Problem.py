@@ -1,8 +1,14 @@
 import torch
 
+### Lab02 Problem 1
+### Linear Regression - single variable
+### For given x_train(x) and label(y), perform linear regression.
+### Assume y = wx + b
+
 def train(x_train, label):
     ### Implement from here ###
-    w, b = 0, 0
+    w = torch.tensor([0.])
+    b = torch.tensor([0.])
     return w, b
 
 if __name__=="__main__":
@@ -11,6 +17,7 @@ if __name__=="__main__":
     x_test = torch.tensor([5.0, 10.0, 8.0])
     
     w, b = train(x_train, label)
+    print("weight : " + str(w) + ", bias : " + str(b))
     
     y = w * x_test + b
     print("Predicted value : " + str(y))
