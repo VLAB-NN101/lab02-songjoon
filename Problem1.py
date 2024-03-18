@@ -5,7 +5,7 @@ def train(x_train,label):
     
     return w,b
 
-if __name__ =="__main__":
+def main():
 
     x_train = torch.tensor([0.0, 1.0, 2.0, 3.0, 4.0])
     label = torch.tensor([2.0, 4.0, 6.0, 8.0, 10.0])
@@ -14,4 +14,6 @@ if __name__ =="__main__":
     w,b = train(x_train, label) # Implement this
     
     y = w*x_test + b
-    print("answer : ", y)
+    return y
+    
+main()
