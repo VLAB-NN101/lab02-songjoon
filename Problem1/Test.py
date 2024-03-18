@@ -9,7 +9,7 @@ PATH = "~/Testcase/Lab02/Problem1/"
 def getAddress(x):
     return PATH + "ex" + str(x) + ".csv"
 
-def test_Problem1():
+if __name__ == "__main__":
     ## need to implement grading code
     ## test run example : ./Test.py 1
     for num in range(1,4):
