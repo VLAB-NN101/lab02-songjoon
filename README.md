@@ -17,6 +17,8 @@ Multiple Linear Regression - multiple variable
 For given x_train(x1,x2,...) and label(y), perform linear regression.  
 Assume y = wx + b  
 
+Tip) Try to make general code.
+because Testcase has various number of xn
 
 ## Submission 
 Just push you code to the repository created by github class.
