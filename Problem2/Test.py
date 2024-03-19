@@ -22,15 +22,15 @@ if __name__ == "__main__":
             
         ## process torch.Tensor and make comparsion
         ## Answer should be < 1% relative error.
-        datalen = len(arr[0])- 1
+
         train_tensor = torch.FloatTensor(np.float_(train_data))
-        x_train = train_tensor[:,0:datalen]
-        train_label = train_tensor[:,datalen]
+        x_train = train_tensor[:,0:-1]
+        train_label = train_tensor[:,-1]
         w, b = Problem.train(x_train,train_label)
             
         test_tensor = torch.FloatTensor(np.float_(test_data))
-        x_test = test_tensor[:,0:datalen]
-        test_label = test_tensor[:,datalen]
+        x_test = test_tensor[:,0:-1]
+        test_label = test_tensor[:,-1]
         
         y = torch.matmul(x_test,w)+b
         
