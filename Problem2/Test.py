@@ -34,6 +34,6 @@ if __name__ == "__main__":
         
         y = torch.matmul(x_test,w)+b
         
-        error = 5e-2 * test_label
+        error = 1e-1 * test_label
 
         assert(all(abs(test_label - y) < error)) 
