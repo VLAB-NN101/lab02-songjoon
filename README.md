@@ -1,6 +1,6 @@
 # Lab02
 Lab 2 is about Linear Regression.  
-Your goal is to learn "w" and "b" with the given training data, and pass the test case.  
+Your goal is to learn `w` and `b` with the given training data, and pass the test case.  
 In a given skeleton code, You can experiment your code with a simple example.  
 
     Actual scoring will be done with a hidden test case
@@ -9,16 +9,16 @@ There are 2 Problems you need to solve
 
 ## Problem 1
 Linear Regression - single variable  
-For given x_train(x) and label(y), perform linear regression.  
-Assume y = wx + b  
+For given `x_train`($x$) and `label`($y$), perform linear regression.  
+Assume $y = wx + b$.
 
 ## Problem 2
 Multiple Linear Regression - multiple variable  
-For given x_train(x1,x2,...) and label(y), perform linear regression.  
-Assume y = wx + b  
+For given `x_train`($\vec x$) and `label`($y$), perform linear regression.  
+Assume $y = \vec x \cdot \vec w + b$.
 
 Tip) Try to make general code.  
-because Testcase has various number of xn
+because Testcase has various size of $x_n$.
 
 ## Submission 
 Just push you code to the repository created by github class.
