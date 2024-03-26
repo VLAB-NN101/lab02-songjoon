@@ -7,7 +7,7 @@ import torch
 
 def train(x_train, label):
     ### Implement from here ###
-    w = torch.tensor([0.], requires_grad = True)
+    w = torch.tensor([1.], requires_grad = True)
     b = torch.tensor([1.], requires_grad = True)
     return w, b
 
